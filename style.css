@@ -344,7 +344,7 @@ button:hover {
 }
 #page5 h1 {
     position: absolute;
-    bottom: 20%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 80px;

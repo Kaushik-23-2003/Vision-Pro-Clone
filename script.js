@@ -28,18 +28,19 @@ gsap.to('#page1_btm',{
 
 // Page 5 Text-Scroll Effect
 gsap.registerPlugin(ScrollTrigger);
-var tl1 = gsap.timeline({
-    scrollTrigger:{
-        trigger:`#page5`,
-        start:`top top`,
-        scrub:1,
-        pin:true,
 
+var tl1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: `#page5`,
+        start: `top top`,
+        scrub: 1,
+        pin: true,
     }
-})
-tl1.to("#page5>h1",{
-    top:`-50%`
-})
+});
+
+tl1.to("#page5 > h1", {
+    top: '-50%', 
+});
 
 // Page 8 Canvas Images Controlls
 function canvas(){
