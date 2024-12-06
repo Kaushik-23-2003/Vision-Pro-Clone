@@ -1,24 +1,3 @@
-// Nav2 Controls 
-document.addEventListener("DOMContentLoaded", function () {
-    const nav1 = document.getElementById("nav1");
-    const nav2 = document.getElementById("nav2");
-    const page1 = document.getElementById("page1");
-  
-    const page1Height = page1.offsetHeight; // Height of #page1
-  
-    window.addEventListener("scroll", function () {
-      if (window.scrollY >= page1Height) {
-        // When #page1 is scrolled to the top
-        nav1.classList.add("hidden"); // Hide nav1
-        nav2.classList.add("fixed"); // Fix nav2 to the top
-      } else {
-        // Reset when scrolled above #page1
-        nav1.classList.remove("hidden");
-        nav2.classList.remove("fixed");
-      }
-    });
-  });  
-
 // Page 1 Video-Scroll Effect
 gsap.to('#hero',{
   scrollTrigger:{
@@ -30,7 +9,6 @@ gsap.to('#hero',{
     document.querySelector('#hero').play()
   }
 })
-
 gsap.to('#page1',{
   scrollTrigger:{
     trigger: '#page1',
@@ -46,16 +24,6 @@ gsap.to('#page1_btm',{
   },
   opacity: 0 
 });
-
-
-// gsap.to('#nav2', {
-//   scrollTrigger: {
-//     trigger: '#page1_btm',
-//     start: 'top top', 
-//     end: 'bottom top', 
-//     toggleClass: { targets: '#nav2', className: 'fixed' },
-//   },
-// });
 
 
 // Page 5 Text-Scroll Effect
@@ -74,7 +42,6 @@ tl1.to("#page5>h1",{
 })
 
 // Page 8 Canvas Images Controlls
-
 function canvas(){
     const canvas = document.querySelector("#page8>canvas");
 const context = canvas.getContext("2d");
@@ -294,8 +261,8 @@ function files(index) {
   return data.split("\n")[index];
 }
 
-const frameCount = 198;
 
+const frameCount = 198;
 const images = [];
 const imageSeq = {
   frame: 1,
@@ -356,7 +323,7 @@ ScrollTrigger.create({
 }
 canvas();
 
-
+// Page 19 Canvas Effect
 function canvas1(){
   const canvas = document.querySelector("#page19>canvas");
 const context = canvas.getContext("2d");
@@ -422,7 +389,6 @@ gsap.to(imageSeq, {
   scrollTrigger: {
     scrub: 0.15,
     trigger: `#page19`,
-    //   set start end according to preference
     start: `top top`,
     end: `80% top`,
   },
@@ -465,6 +431,7 @@ ScrollTrigger.create({
 }
 canvas1();
 
+// Page 22 Scroll Effect
 var tl3 = gsap.timeline({
   scrollTrigger:{
       trigger:`#page22`,
@@ -488,7 +455,6 @@ var tl4 = gsap.timeline({
 tl4.to("#page23>#sroff",{
   opacity:0
 })
-
 
 gsap.to("#page24>img",{
   scrollTrigger:{
