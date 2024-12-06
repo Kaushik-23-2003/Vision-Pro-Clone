@@ -2,6 +2,10 @@
 
 A web-based clone of the Apple Vision Pro product page, designed to showcase a clean and modern interface. The project replicates key elements from the original site, including interactive navigation, dynamic video integration, and scroll-triggered effects.
 
+## 🌐 Live Demo  
+You can visit the website and explore the project here:  
+[Vision Pro Clone - GitHub Pages](https://kaushik-23-2003.github.io/Vision-Pro-Clone/)
+
 ## **Features** ✨
 
 - **Engaging Visuals**: Integrated video background for immersive user interaction. 🎥  
