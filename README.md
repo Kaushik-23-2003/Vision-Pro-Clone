@@ -34,8 +34,3 @@ You can visit the website and explore the project here:
       cd Vision-Pro-Clone
       
 5. **Open the ` index.html ` file in your browser to view the project**.
-
-## **Demo Video** 🎬
-Click the link below to view the demo video:  
-
-[Demo Video - Google Drive](https://drive.google.com/file/d/1eHxZtTMdK-5sCTNXoGZ7dfNshnxMpp_h/view?usp=drive_link)  
